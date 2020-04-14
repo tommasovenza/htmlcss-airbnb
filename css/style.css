@@ -1,0 +1,73 @@
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* codice */
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* classi */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/milano.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.napoli {
+    background-image: url(../img/napoli.jpg);
+}
+
+.roma {
+    background-image: url(..//img/roma.jpg);
+}
+
+.filter {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100vh;
+}
+
+.cuore {
+    font-size: 100px;
+    display: none;
+    color: red;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+}
+
+/* effetto hover */
+
+.box:hover .filter{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.box:hover .cuore {
+    display: block;
+}
+
